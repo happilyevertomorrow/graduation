@@ -1,5 +1,5 @@
 // Joanna Riascos
-// Program to indicate user's year of birth, year of graduation, and the present year.
+// program to indicate user's year of birth, year of graduation, and the present year
 
 #include <iostream>
 using namespace std;
