@@ -1,0 +1,52 @@
+// Joanna Riascos
+// Program to indicate user's year of birth, year of graduation, and the present year.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double age = 18, gradyear = 2014, presyear = 2013, birth, yearninety, leftyears;
+	//	1. Ask the user and input data:
+	//     Age, year of graduation, and the present year
+	cout << " How old are you? "; 
+	cin >> age;
+	cout << " When do you graduate? ";
+	cin >> gradyear;
+	cout << " What year is it? \n ";
+	cin >> presyear;
+	 
+	// Equation to find the year of the user's birth.
+// User's Birth = PresentYear - Age
+//
+	birth = (presyear - age);
+	//
+	//
+
+	// Equation to find the year at which the user will be 90 years old.
+// YearToBe = User's Birth + 90
+// 
+	yearninety = (birth + 90);
+	//
+	//
+
+	// 2. Output calculations:
+	cout << " Since you are " << age << " in " << presyear << " you were born in " << birth << " and will be 90 in " << yearninety << endl;
+
+
+	// Equation to find the number of years still to go at SPU.
+// YearsLeft = Graduation Year - CurrentYear
+//
+	leftyears = (gradyear - presyear);	
+
+
+	// 3. Output calculations:
+	cout <<  " Since you will graduate in " << gradyear << " you have " << leftyears << " more year at Saint Peter's University. " << endl;
+
+	   
+	cin >> gradyear;    // to delay the window closing.
+	return 0;
+}
+
+
+
